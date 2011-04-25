@@ -1,7 +1,13 @@
 # To install source this file from your .zshrc file
 
-# Change this to reflect your installation directory
-export __GIT_PROMPT_DIR=~/.zsh/git-prompt
+# To override the location, use 
+if [ "${GIT_PROMPT_DIR}" == "" ]; then
+    __GIT_PROMPT_DIR=~/.zsh/git-prompt
+else
+    __GIT_PROMPT_DIR=${GIT_PROMPT_DIR}
+fi
+export __GIT_PROMPT_DIR
+
 # Initialize colors.
 autoload -U colors
 colors
