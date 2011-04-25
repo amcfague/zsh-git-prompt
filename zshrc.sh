@@ -60,6 +60,6 @@ function prompt_git_info() {
 }
 
 # Set the prompt.
-PROMPT='%B%m%~%b$(prompt_git_info) %# '
+#PROMPT='%B%m%~%b$(prompt_git_info) %# '
 # for a right prompt:
 # RPROMPT='%b$(prompt_git_info)'
